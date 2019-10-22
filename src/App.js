@@ -14,67 +14,33 @@ class App extends React.Component {
 		super(props);
 		this.state = {
 			mealTypes: [{
-				name: 'appetizers',
-				href: '#appetizers',
-				className: 'nav-link active',
-				class: 'tab-pane fade show active',
-				id: "appetizers-tab",
-				role: 'tab',
-				select: 'true'
+				name: 'appetizers'
 			}, {
-				name: 'breakfast',
-				href: '#breakfast',
-				className: 'nav-link',
-				class: 'tab-pane fade',
-				id: 'breakfast-tab',
-				role: 'tab',
-				select: 'false'
+				name: 'breakfast'
 			}, {
-				name: 'lunch',
-				href: '#lunch',
-				className: 'nav-link',
-				class: 'tab-pane fade',
-				id: 'lunch-tab',
-				role: 'tab',
-				select: 'false'
+				name: 'lunch'
 			}, {
-				name: 'main course',
-				href: '#main-course',
-				className: 'nav-link',
-				class: 'tab-pane fade',
-				id: 'main-course-tab',
-				role: 'tab',
-				select: 'false'
+				name: 'main course'
 			}, {
-				name: 'sides',
-				href: '#sides',
-				className: 'nav-link',
-				class: 'tab-pane fade',
-				id: 'sides-tab',
-				role: 'tab',
-				select: 'false'
+				name: 'sides'
 			}, {
-				name: 'dessert',
-				href: '#dessert',
-				className: 'nav-link',
-				class: 'tab-pane fade',
-				id: 'dessert-tab',
-				role: 'tab',
-				select: 'false'
+				name: 'dessert'
 			}],
 			menu: []
 		}
 	}
 
 	componentDidMount() {
-		axios.get('https://entree-f18.herokuapp.com/v1/menu/12')
-			.then(res => {
-				this.state.mealTypes.map((mealType, idx) => {
-					const menu = res.data;
-					this.setState({ menu });
-					localStorage.setItem(mealType.name, JSON.stringify(this.state.menu));
-				})
-			})
+		this.state.mealTypes.map((mealType, idx) => {
+			if (!(localStorage.getItem(mealType.name))) {
+				axios.get('https://entree-f18.herokuapp.com/v1/menu/12')
+					.then(res => {
+						const menu = res.data;
+						this.setState({ menu });
+						localStorage.setItem(mealType.name, JSON.stringify(this.state.menu));
+					})
+			}
+		})
 	}
 
 	render() {
@@ -83,7 +49,7 @@ class App extends React.Component {
 			<div className="App">
 				<Header />
 				<Navbar brand="Restaurant" />
-				<NavGroup menuCats={this.state.mealTypes} />
+				<NavGroup check={this.state.menu} />
 			</div>
 		);
 	}
