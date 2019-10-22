@@ -3,33 +3,35 @@ import React from 'react';
 import { Tabs, Tab } from 'react-bootstrap-tabs';
 import PopulateTable from './PopulateTable.js';
 
+import './NavGroup.css';
+
 
 class NavGroup extends React.Component {
     render() {
         return (
             <div id="montserrat">
                 <Tabs>
-                    <Tab label="Appetizers">
+                    <Tab className="cursor" label="Appetizers">
                         <PopulateTable
                             menu="appetizers" />
                     </Tab>
-                    <Tab label="Breakfast">
+                    <Tab className="cursor" label="Breakfast">
                         <PopulateTable
                             menu="breakfast" />
                     </Tab>
-                    <Tab label="Lunch">
+                    <Tab className="cursor" label="Lunch">
                         <PopulateTable
                             menu="lunch" />
                     </Tab>
-                    <Tab label="Main Course">
+                    <Tab className="cursor" label="Main Course">
                         <PopulateTable
                             menu="main course" />
                     </Tab>
-                    <Tab label="Sides">
+                    <Tab className="cursor" label="Sides">
                         <PopulateTable
                             menu="sides" />
                     </Tab>
-                    <Tab label="Dessert">
+                    <Tab className="cursor" label="Dessert">
                         <PopulateTable
                             menu="dessert" />
                     </Tab>

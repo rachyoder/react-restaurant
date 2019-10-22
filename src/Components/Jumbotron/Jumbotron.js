@@ -2,9 +2,9 @@ import React from 'react';
 import './Jumbotron.css';
 
 class Jumbotron extends React.Component {
-    render(props) {
+    render() {
         return (
-            <div className="jumbotron my-auto" id="jumbotron">
+            <div className="jumbotron mt-5" id="jumbotron">
                 <h1 className="display-4" id="display">{this.props.title}</h1>
                 <p className="lead" id="montserrat">{this.props.lead}</p>
             </div>

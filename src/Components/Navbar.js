@@ -28,7 +28,7 @@ class Navbar extends React.Component {
 
     render() {
         return (
-            <nav className="navbar navbar-light navbar-expand-md sticky-top">
+            <nav className="navbar navbar-light navbar-expand-md bg-light sticky-top mb-4">
                 <div className="container">
                     <a className="navbar-brand d-md-none" id="display" href="#">{this.props.brand}</a>
                     <button

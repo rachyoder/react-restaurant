@@ -7,7 +7,7 @@ import 'bootstrap/dist/js/bootstrap.js';
 
 import Header from './Components/Header/Header.js';
 import Navbar from './Components/Navbar.js';
-import NavGroup from './Components/NavGroup.js';
+import NavGroup from './Components/NavGroup/NavGroup.js';
 
 class App extends React.Component {
 	constructor(props) {
@@ -25,8 +25,7 @@ class App extends React.Component {
 				name: 'sides'
 			}, {
 				name: 'dessert'
-			}],
-			menu: []
+			}]
 		}
 	}
 
@@ -36,24 +35,23 @@ class App extends React.Component {
 				axios.get('https://entree-f18.herokuapp.com/v1/menu/12')
 					.then(res => {
 						const menu = res.data;
-						this.setState({ menu });
-						localStorage.setItem(mealType.name, JSON.stringify(this.state.menu));
+						localStorage.setItem(mealType.name, JSON.stringify(menu));
 					})
 			}
 		})
 	}
 
 	render() {
-
 		return (
 			<div className="App">
 				<Header />
 				<Navbar brand="Restaurant" />
-				<NavGroup check={this.state.menu} />
+				<section id="menu">
+					<NavGroup />
+				</section>
 			</div>
 		);
 	}
 }
-
 
 export default App;

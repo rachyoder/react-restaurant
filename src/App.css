@@ -1,7 +1,15 @@
+html {
+    scroll-behavior: smooth;
+}
+
 #display {
     font-family: 'Fascinate Inline', cursive;
 }
 
 #montserrat {
     font-family: 'Montserrat', sans-serif;
+}
+
+section {
+    padding: 150px 0px;
 }
