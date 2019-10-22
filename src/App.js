@@ -14,44 +14,50 @@ class App extends React.Component {
 		super(props);
 		this.state = {
 			mealTypes: [{
-				name: 'Appetizers',
+				name: 'appetizers',
 				href: '#appetizers',
 				className: 'nav-link active',
+				class: 'tab-pane fade show active',
 				id: "appetizers-tab",
 				role: 'tab',
 				select: 'true'
 			}, {
-				name: 'Breakfast',
+				name: 'breakfast',
 				href: '#breakfast',
 				className: 'nav-link',
+				class: 'tab-pane fade',
 				id: 'breakfast-tab',
 				role: 'tab',
 				select: 'false'
 			}, {
-				name: 'Lunch',
+				name: 'lunch',
 				href: '#lunch',
 				className: 'nav-link',
+				class: 'tab-pane fade',
 				id: 'lunch-tab',
 				role: 'tab',
 				select: 'false'
 			}, {
-				name: 'Main course',
+				name: 'main course',
 				href: '#main-course',
 				className: 'nav-link',
+				class: 'tab-pane fade',
 				id: 'main-course-tab',
 				role: 'tab',
 				select: 'false'
 			}, {
-				name: 'Sides',
+				name: 'sides',
 				href: '#sides',
 				className: 'nav-link',
+				class: 'tab-pane fade',
 				id: 'sides-tab',
 				role: 'tab',
 				select: 'false'
 			}, {
-				name: 'Dessert',
+				name: 'dessert',
 				href: '#dessert',
 				className: 'nav-link',
+				class: 'tab-pane fade',
 				id: 'dessert-tab',
 				role: 'tab',
 				select: 'false'

@@ -4,8 +4,7 @@ import PopulateItems from './PopulateItems.js';
 class NavGroup extends React.Component {
     render() {
         return (
-            <div>
-
+            <div id="montserrat">
                 <ul className="nav nav-tabs" id="menu" role="tablist">
                     <PopulateItems items={this.props.menuCats} />
                 </ul>

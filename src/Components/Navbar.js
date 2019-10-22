@@ -30,7 +30,7 @@ class Navbar extends React.Component {
         return (
             <nav className="navbar navbar-light navbar-expand-md sticky-top">
                 <div className="container">
-                    <a className="navbar-brand d-md-none" href="#">{this.props.brand}</a>
+                    <a className="navbar-brand d-md-none" id="display" href="#">{this.props.brand}</a>
                     <button
                         className="navbar-toggler"
                         type="button"
@@ -42,11 +42,11 @@ class Navbar extends React.Component {
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul className="navbar-nav mr-auto">
+                        <ul className="navbar-nav mr-auto" id="montserrat">
                             <PopulateItems items={this.state.navbarLeft} />
                         </ul>
-                        <a className="navbar-brand d-none d-md-flex mx-auto font-weight-bold" href="#">{this.props.brand}</a>
-                        <ul className="navbar-nav ml-auto">
+                        <a className="navbar-brand d-none d-md-flex mx-auto font-weight-bold" id="display" href="#">{this.props.brand}</a>
+                        <ul className="navbar-nav ml-auto" id="montserrat">
                             <PopulateItems items={this.state.navbarRight} />
                         </ul>
                     </div>
