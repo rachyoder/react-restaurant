@@ -8,36 +8,30 @@ class NavGroup extends React.Component {
     render() {
         return (
             <div id="montserrat">
-                <Tabs onSelect={(index, label) => console.log(label + " selected")}>
+                <Tabs>
                     <Tab label="Appetizers">
                         <PopulateTable
-                            menu="appetizers"
-                            check={this.props.check} />
+                            menu="appetizers" />
                     </Tab>
                     <Tab label="Breakfast">
                         <PopulateTable
-                            menu="breakfast"
-                            check={this.props.check} />
+                            menu="breakfast" />
                     </Tab>
                     <Tab label="Lunch">
                         <PopulateTable
-                            menu="lunch"
-                            check={this.props.check} />
+                            menu="lunch" />
                     </Tab>
                     <Tab label="Main Course">
                         <PopulateTable
-                            menu="main course"
-                            check={this.props.check} />
+                            menu="main course" />
                     </Tab>
                     <Tab label="Sides">
                         <PopulateTable
-                            menu="sides"
-                            check={this.props.check} />
+                            menu="sides" />
                     </Tab>
                     <Tab label="Dessert">
                         <PopulateTable
-                            menu="dessert"
-                            check={this.props.check} />
+                            menu="dessert" />
                     </Tab>
                 </Tabs>
             </div>

@@ -3,25 +3,17 @@ import React from 'react';
 class FillTable extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {
-            menuItems: []
-        }
-    }
-
-    componentDidMount() {
-
-        const menuItems = localStorage.getItem(this.props.menu);
-        console.log(JSON.parse(menuItems));
-        // this.setState({ menuItems: menuItems });
-        // localStorage.setItem(menuItems);
     }
 
     render() {
+        const menuItems = JSON.parse(localStorage.getItem(this.props.menu));
         return (
-            this.state.menuItems.map((item, idx) => {
+            menuItems.menu_items.map((item, idx) => {
+                const length = item.description.length;
                 return (
                     <tr key={idx}>
-                        <td>test</td>
+                        <td>{item.description}</td>
+                        <td>${length}.99</td>
                     </tr>
                 );
             })
@@ -32,15 +24,20 @@ class FillTable extends React.Component {
 class PopulateTable extends React.Component {
 
     render() {
-        return (
-            <div>
-                <table className="table table-hover">
+
+        return (localStorage.length > 0 ? (
+            <div className="container">
+                <table className="table table-borderless table-hover">
                     <tbody>
                         <FillTable menu={this.props.menu} check={this.props.check} />
                     </tbody>
                 </table>
             </div>
-        );
+        ) : (
+                <div className="container text-center">
+                    Loading...
+            </div>
+            ));
     }
 }
 
