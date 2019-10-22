@@ -1,31 +1,36 @@
 import React from 'react';
-
-class NavbarItems extends React.Component {
-    render() {
-        return (
-            this.props.items.map((item, idx) => {
-                return (<li key={idx} className="nav-item">
-                    <a href="#" className="nav-link px-2 mx-4">{item}</a>
-                </li>)
-            })
-        );
-    }
-}
+import PopulateItems from './PopulateItems.js';
 
 class Navbar extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            navbarLeft: ["About Us", "Menu"],
-            navbarRight: ["Location", "Contact"]
+            navbarLeft: [{
+                name: "About Us",
+                href: "#aboutUs",
+                className: "nav-link mx-4 px-2"
+            }, {
+                name: "Menu",
+                href: "#menu",
+                className: "nav-link mx-4 px-2"
+            }],
+            navbarRight: [{
+                name: "Location",
+                href: "#location",
+                className: "nav-link mx-4 px-2"
+            }, {
+                name: "Contact",
+                href: "#contact",
+                className: "nav-link mx-4 px-2"
+            }]
         }
     }
 
     render() {
         return (
-            <nav className="navbar navbar-light navbar-expand-lg sticky-top">
+            <nav className="navbar navbar-light navbar-expand-md sticky-top">
                 <div className="container">
-                    <a className="navbar-brand d-lg-none" href="#">{this.props.brand}</a>
+                    <a className="navbar-brand d-md-none" href="#">{this.props.brand}</a>
                     <button
                         className="navbar-toggler"
                         type="button"
@@ -38,11 +43,11 @@ class Navbar extends React.Component {
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav mr-auto">
-                            <NavbarItems items={this.state.navbarLeft} />
+                            <PopulateItems items={this.state.navbarLeft} />
                         </ul>
-                        <a className="navbar-brand d-none d-lg-flex mx-auto font-weight-bold" href="#">{this.props.brand}</a>
-                        <ul class="navbar-nav ml-auto">
-                            <NavbarItems items={this.state.navbarRight} />
+                        <a className="navbar-brand d-none d-md-flex mx-auto font-weight-bold" href="#">{this.props.brand}</a>
+                        <ul className="navbar-nav ml-auto">
+                            <PopulateItems items={this.state.navbarRight} />
                         </ul>
                     </div>
                 </div>
