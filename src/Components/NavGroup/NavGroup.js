@@ -8,7 +8,6 @@ import './NavGroup.css';
 import appetizer from './appetizer.jpg';
 import breakfast from './breakfast.jpg';
 import dessert from './dessert.jpg';
-import dinner from './dinner.jpg';
 import lunch from './lunch.jpg';
 import main_course from './main-course.jpg';
 import sides from './sides.jpg';

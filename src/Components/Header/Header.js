@@ -11,7 +11,7 @@ class Header extends React.Component {
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-12  mt-5 text-center">
-                            <Jumbotron title="Restaurant" lead="The best place to find food at exuberant rates!" />
+                            <Jumbotron title={this.props.title} lead={this.props.lead} />
                         </div>
                     </div>
                 </div>

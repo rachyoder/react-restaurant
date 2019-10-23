@@ -45,7 +45,7 @@ class App extends React.Component {
 	render() {
 		return (
 			<div className="App">
-				<Header />
+				<Header title="Restaurant" lead="Best Place to buy Over-priced Bran" />
 				<Navbar brand="Restaurant" />
 				<section id="menu">
 					<NavGroup />
