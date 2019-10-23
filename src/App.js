@@ -9,6 +9,7 @@ import Header from './Components/Header/Header.js';
 import Navbar from './Components/Navbar.js';
 import NavGroup from './Components/NavGroup/NavGroup.js';
 
+
 class App extends React.Component {
 	constructor(props) {
 		super(props);
@@ -20,7 +21,7 @@ class App extends React.Component {
 			}, {
 				name: 'lunch'
 			}, {
-				name: 'main course'
+				name: 'main_course'
 			}, {
 				name: 'sides'
 			}, {

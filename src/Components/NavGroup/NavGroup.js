@@ -5,6 +5,15 @@ import PopulateTable from './PopulateTable.js';
 
 import './NavGroup.css';
 
+import appetizer from './appetizer.jpg';
+import breakfast from './breakfast.jpg';
+import dessert from './dessert.jpg';
+import dinner from './dinner.jpg';
+import lunch from './lunch.jpg';
+import main_course from './main-course.jpg';
+import sides from './sides.jpg';
+
+
 
 class NavGroup extends React.Component {
     render() {
@@ -13,27 +22,33 @@ class NavGroup extends React.Component {
                 <Tabs>
                     <Tab className="cursor" label="Appetizers">
                         <PopulateTable
-                            menu="appetizers" />
+                            menu="appetizers"
+                            src={appetizer} />
                     </Tab>
                     <Tab className="cursor" label="Breakfast">
                         <PopulateTable
-                            menu="breakfast" />
+                            menu="breakfast"
+                            src={breakfast} />
                     </Tab>
                     <Tab className="cursor" label="Lunch">
                         <PopulateTable
-                            menu="lunch" />
+                            menu="lunch"
+                            src={lunch} />
                     </Tab>
                     <Tab className="cursor" label="Main Course">
                         <PopulateTable
-                            menu="main course" />
+                            menu="main_course"
+                            src={main_course} />
                     </Tab>
                     <Tab className="cursor" label="Sides">
                         <PopulateTable
-                            menu="sides" />
+                            menu="sides"
+                            src={sides} />
                     </Tab>
                     <Tab className="cursor" label="Dessert">
                         <PopulateTable
-                            menu="dessert" />
+                            menu="dessert"
+                            src={dessert} />
                     </Tab>
                 </Tabs>
             </div>
