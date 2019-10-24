@@ -1,0 +1,24 @@
+.contactImg {
+    border-right: 2px solid black;
+    border-radius: 0px 15px 50px 0px;
+    width: 100%;
+    height: auto;
+}
+
+.cardStyle {
+    height: 100%;
+    border: 2px solid black;
+    border-top-width: 4px;
+    border-right: 0px;
+    border-bottom-width: 1px;
+    border-radius: 50px 0px 0px 15px;
+
+}
+
+.cardTitle {
+    font-size: 3vw;
+}
+
+.contactList {
+    margin-right: 2em;
+}

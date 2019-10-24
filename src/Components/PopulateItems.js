@@ -4,7 +4,7 @@ class PopulateItems extends React.Component {
     render() {
         return (
             this.props.items.map((item, idx) => {
-                return (
+                return ( this.props.link ? (
                     <li key={idx} className="nav-item">
                         <a
                             href={item.href}
@@ -17,6 +17,11 @@ class PopulateItems extends React.Component {
                             {item.name}
                         </a>
                     </li>
+                    ) : (
+                        <li className="list-group-item p-1 contactList" key={idx}>
+                            <p id="montserrat" className="text-center m-0 contactPara">{item}</p>
+                        </li>
+                    )
                 );
             })
         );

@@ -43,11 +43,11 @@ class Navbar extends React.Component {
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav mr-auto" id="montserrat">
-                            <PopulateItems items={this.state.navbarLeft} />
+                            <PopulateItems items={this.state.navbarLeft} link={true} />
                         </ul>
                         <a className="navbar-brand d-none d-md-flex mx-auto font-weight-bold" id="display" href="#">{this.props.brand}</a>
                         <ul className="navbar-nav ml-auto" id="montserrat">
-                            <PopulateItems items={this.state.navbarRight} />
+                            <PopulateItems items={this.state.navbarRight} link={true}/>
                         </ul>
                     </div>
                 </div>

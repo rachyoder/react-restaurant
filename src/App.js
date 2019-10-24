@@ -4,12 +4,16 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.js';
 
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faMapMarkerAlt} from '@fortawesome/free-solid-svg-icons';
+
 import Header from './Components/Header/Header.js';
-// import Navbar from './Components/Navbar.js';
 import NavGroup from './Components/NavGroup/NavGroup.js';
 import SimpleMap from './Components/SimpleMap/SimpleMap';
-import ContactCard from './Components/ContactCard';
+import ContactCard from './Components/Card/ContactCard';
 import AboutUs from './Components/AboutUs/AboutUs';
+
+library.add(faMapMarkerAlt)
 
 class App extends React.Component {
 	constructor(props) {
@@ -51,7 +55,6 @@ class App extends React.Component {
 				<Header
 					title="Bourgeoisie"
 					lead="High End Dining at High End Prices" />
-				{/* <Navbar brand="Bourgeoisie" /> */}
 				<section id="aboutUs">
 					<AboutUs />
 				</section>
@@ -66,6 +69,7 @@ class App extends React.Component {
 						<div className="row">
 							<div className="col-12">
 								<h3 id="display" className="text-center">Where To Find Us</h3>
+								<hr />
 							</div>
 						</div>
 					</div>

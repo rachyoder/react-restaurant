@@ -130,9 +130,12 @@ p.aboutBody:first-letter {
 }
 
 @media (min-width: 768px) {
-    .aboutLeft,
     .aboutRight {
         padding-top: 2em;
+    }
+    .aboutLeft {
+        padding-top: 0em;
+        padding-bottom: 5em;
     }
 }
 

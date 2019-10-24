@@ -3,8 +3,8 @@ import { Map, GoogleApiWrapper, InfoWindow, Marker } from 'google-maps-react';
 import './SimpleMap.css';
 
 const mapStyles = {
-    width: "100%",
-    height: "100%"
+    width: "100vw",
+    height: "60%"
 };
 
 class SimpleMap extends React.Component {
@@ -35,29 +35,30 @@ class SimpleMap extends React.Component {
 
     render() {
         return (
-            <Map 
-                google={this.props.google}
-                zoom={16}
-                style={mapStyles}
-                initialCenter={{
-                    lat: 38.042346,
-                    lng: -84.492603
-                }}
-            >
-                <Marker 
-                    onClick={this.onMarkerClick}
-                    name={"Bourgeoisie Fine Dining"}
-                />
-                <InfoWindow 
-                    marker={this.state.activeMarker}
-                    visible={this.state.showingInfoWindow}
-                    onClose={this.onClose}
+                <Map
+                    id="mapContainer"
+                    google={this.props.google}
+                    zoom={16}
+                    style={mapStyles}
+                    initialCenter={{
+                        lat: 38.042346,
+                        lng: -84.492603
+                    }}
                 >
-                    <div>
-                        <h4 id="display">{this.state.selectedPlace.name}</h4>
-                    </div>
-                </InfoWindow>
-            </Map>
+                    <Marker
+                        onClick={this.onMarkerClick}
+                        name={"Bourgeoisie Fine Dining"}
+                    />
+                    <InfoWindow
+                        marker={this.state.activeMarker}
+                        visible={this.state.showingInfoWindow}
+                        onClose={this.onClose}
+                    >
+                        <div>
+                            <h4 id="display">{this.state.selectedPlace.name}</h4>
+                        </div>
+                    </InfoWindow>
+                </Map>
         );
     }
 }
