@@ -4,7 +4,7 @@ import './SimpleMap.css';
 
 const mapStyles = {
     width: "100vw",
-    height: "60%"
+    height: "80%"
 };
 
 class SimpleMap extends React.Component {

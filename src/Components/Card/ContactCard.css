@@ -22,3 +22,13 @@
 .contactList {
     margin-right: 2em;
 }
+
+@media (max-width:767px) {
+    p.cardBody,
+    p.contactPara {
+        font-size: 10px;
+    }
+    .card-body {
+        padding: 0;
+    }
+}

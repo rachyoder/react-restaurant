@@ -13,9 +13,9 @@ class Card extends React.Component {
                 <div className="card-body">
                     <h5 id={this.props.font} className="card-title text-center cardTitle">{this.props.title}</h5>
                     <hr />
-                    <p id={this.props.bodyFont} className="card-text text-center">{this.props.desc}</p>
+                    <p id={this.props.bodyFont} className="card-text text-center cardBody">{this.props.desc}</p>
                 </div>
-                <ul className="lit-group list-group-flush">
+                <ul className="list-group list-group-flush">
                     <PopulateItems items={this.props.contact} />
                 </ul>
             </div>
