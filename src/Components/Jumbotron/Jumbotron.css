@@ -1,0 +1,26 @@
+#jumbotron {
+  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.9);
+  margin-top: 6em !important;
+  z-index: 2 !important;
+}
+h1#display {
+  font-size: 8vw;
+}
+p.lead {
+  font-size: 3vw;
+}
+span.loc {
+  float: left;
+  font-size: 20px;
+}
+span.time {
+  float: right;
+  font-size: 20px;
+}
+@media (max-width: 380px) {
+  span.loc,
+  span.time {
+    font-size: 14px;
+  }
+}

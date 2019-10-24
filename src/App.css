@@ -1,1 +1,22 @@
+html {
+    scroll-behavior: smooth;
+}
 
+#display {
+    font-family: 'Parisienne', cursive;
+}
+
+#montserrat {
+    font-family: 'Poiret One', cursive;
+}
+
+section#menu,
+section#aboutUs,
+section#location,
+section#contact {
+    padding: 100px 0px;
+}
+
+#location {
+    margin: 0px auto 0px auto;
+}
