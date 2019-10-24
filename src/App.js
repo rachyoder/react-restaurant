@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.js';
 
 import Header from './Components/Header/Header.js';
-import Navbar from './Components/Navbar.js';
+// import Navbar from './Components/Navbar.js';
 import NavGroup from './Components/NavGroup/NavGroup.js';
 import SimpleMap from './Components/SimpleMap/SimpleMap';
 import ContactCard from './Components/ContactCard';
@@ -51,7 +51,7 @@ class App extends React.Component {
 				<Header
 					title="Bourgeoisie"
 					lead="High End Dining at High End Prices" />
-				<Navbar brand="Bourgeoisie" />
+				{/* <Navbar brand="Bourgeoisie" /> */}
 				<section id="aboutUs">
 					<AboutUs />
 				</section>

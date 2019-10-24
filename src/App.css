@@ -3,20 +3,18 @@ html {
 }
 
 #display {
-    font-family: 'Parisienne', cursive !important;
+    font-family: 'Parisienne', cursive;
 }
 
 #montserrat {
-    /* font-family: 'Montserrat', sans-serif; */
-    font-family: 'Poiret One', cursive !important;
+    font-family: 'Poiret One', cursive;
 }
-
 
 section#menu,
 section#aboutUs,
 section#location,
 section#contact {
-    padding: 150px 0px;
+    padding: 100px 0px;
 }
 
 .mapContainer {

@@ -4,39 +4,21 @@
   margin-top: 6em !important;
   z-index: 2 !important;
 }
-
+h1#display {
+  font-size: 8vw;
+}
 p.lead {
-  font-size: 32px;
+  font-size: 3vw;
 }
-
-@media (max-width: 740px) {
-  p.lead {
-    font-size: 20px;
-  }
-}
-
-@media (max-width: 430px) {
-  h1#display {
-    font-size: 40px;
-  }
-
-  p.lead {
-    font-size: 15px;
-  }
-}
-
 span.loc {
   float: left;
   font-size: 20px;
 }
-
 span.time {
   float: right;
   font-size: 20px;
 }
-
 @media (max-width: 380px) {
-
   span.loc,
   span.time {
     font-size: 14px;

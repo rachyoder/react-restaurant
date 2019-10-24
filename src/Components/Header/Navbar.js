@@ -1,5 +1,5 @@
 import React from 'react';
-import PopulateItems from './PopulateItems.js';
+import PopulateItems from '../PopulateItems';
 
 class Navbar extends React.Component {
     constructor(props) {
@@ -15,12 +15,12 @@ class Navbar extends React.Component {
                 className: "nav-link mx-4 px-2"
             }],
             navbarRight: [{
-                name: "Location",
-                href: "#location",
-                className: "nav-link mx-4 px-2"
-            }, {
                 name: "Contact",
                 href: "#contact",
+                className: "nav-link mx-4 px-2"
+            }, {
+                name: "Location",
+                href: "#location",
                 className: "nav-link mx-4 px-2"
             }]
         }
