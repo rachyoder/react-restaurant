@@ -1,17 +1,15 @@
 import React from 'react';
 import axios from 'axios';
 import './App.css';
-
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.js';
 
 import Header from './Components/Header/Header.js';
 import Navbar from './Components/Navbar.js';
 import NavGroup from './Components/NavGroup/NavGroup.js';
-import Map from './Components/Map/Map';
+import SimpleMap from './Components/SimpleMap/SimpleMap';
 import ContactCard from './Components/ContactCard';
 import AboutUs from './Components/AboutUs/AboutUs';
-
 
 class App extends React.Component {
 	constructor(props) {
@@ -41,7 +39,7 @@ class App extends React.Component {
 					.then(res => {
 						const menu = res.data;
 						localStorage.setItem(mealType.name, JSON.stringify(menu));
-						this.setState({menu: "filled"});
+						this.setState({ menu: "filled" });
 					})
 			}
 		})
@@ -50,7 +48,9 @@ class App extends React.Component {
 	render() {
 		return (
 			<div className="App">
-				<Header title="Bourgeoisie" lead="High End Dining at High End Prices" />
+				<Header
+					title="Bourgeoisie"
+					lead="High End Dining at High End Prices" />
 				<Navbar brand="Bourgeoisie" />
 				<section id="aboutUs">
 					<AboutUs />
@@ -58,11 +58,18 @@ class App extends React.Component {
 				<section id="menu">
 					<NavGroup />
 				</section>
-				<section id="location">
-					<Map />
-				</section>
 				<section id="contact">
 					<ContactCard />
+				</section>
+				<section id="location">
+					<div className="container">
+						<div className="row">
+							<div className="col-12">
+								<h3 id="display" className="text-center">Where To Find Us</h3>
+							</div>
+						</div>
+					</div>
+					<SimpleMap />
 				</section>
 			</div>
 		);

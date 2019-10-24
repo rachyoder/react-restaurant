@@ -13,7 +13,7 @@
         padding: 0px 50px;
         height: auto;
         width: 100%;
-        border-radius: 20px;
+        border-radius: 100px;
     }
 }
 
@@ -68,10 +68,12 @@
         margin-bottom: 2em;
     }
 }
-
+p {
+    font-size: 20px;
+}
 p.first-item {
     font-family: 'Parisienne', cursive !important;
-    font-size: 22px;
+    font-size: 24px;
 }
 
 img.accent {
