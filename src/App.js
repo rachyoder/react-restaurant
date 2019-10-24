@@ -8,6 +8,9 @@ import 'bootstrap/dist/js/bootstrap.js';
 import Header from './Components/Header/Header.js';
 import Navbar from './Components/Navbar.js';
 import NavGroup from './Components/NavGroup/NavGroup.js';
+import Map from './Components/Map/Map';
+import ContactCard from './Components/ContactCard';
+import AboutUs from './Components/AboutUs/AboutUs';
 
 
 class App extends React.Component {
@@ -26,7 +29,8 @@ class App extends React.Component {
 				name: 'sides'
 			}, {
 				name: 'dessert'
-			}]
+			}],
+			menu: []
 		}
 	}
 
@@ -37,6 +41,7 @@ class App extends React.Component {
 					.then(res => {
 						const menu = res.data;
 						localStorage.setItem(mealType.name, JSON.stringify(menu));
+						this.setState({menu: "filled"});
 					})
 			}
 		})
@@ -45,10 +50,19 @@ class App extends React.Component {
 	render() {
 		return (
 			<div className="App">
-				<Header title="Restaurant" lead="Best Place to buy Over-priced Bran" />
-				<Navbar brand="Restaurant" />
+				<Header title="Bourgeoisie" lead="High End Dining at High End Prices" />
+				<Navbar brand="Bourgeoisie" />
+				<section id="aboutUs">
+					<AboutUs />
+				</section>
 				<section id="menu">
 					<NavGroup />
+				</section>
+				<section id="location">
+					<Map />
+				</section>
+				<section id="contact">
+					<ContactCard />
 				</section>
 			</div>
 		);

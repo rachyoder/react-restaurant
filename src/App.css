@@ -3,13 +3,17 @@ html {
 }
 
 #display {
-    font-family: 'Fascinate Inline', cursive;
+    font-family: 'Parisienne', cursive !important;
 }
 
 #montserrat {
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Poiret One', cursive !important;
 }
 
-section {
+
+section#menu,
+section#aboutUs,
+section#location {
     padding: 150px 0px;
 }

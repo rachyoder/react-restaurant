@@ -11,6 +11,13 @@ a.nav-link {
 
 @media(max-width: 480px) {
     a.nav-link {
+        font-size: 14px !important;
+        padding: 4px;
+    }
+}
+
+@media(max-width: 351px) {
+    a.nav-link {
         font-size: 12px !important;
         padding: 2px;
     }

@@ -34,7 +34,10 @@
 }
 
 .table {
-    margin: 100px 0px !important;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
     text-align: center;
 }
 
@@ -65,4 +68,13 @@
         margin-bottom: 2em;
     }
 }
-    
+
+p.first-item {
+    font-family: 'Parisienne', cursive !important;
+    font-size: 22px;
+}
+
+img.accent {
+    width: 40%;
+    height: auto;
+}
