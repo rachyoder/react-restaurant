@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/react-restaurant/static/css/main.c534f773.chunk.css",
+    "main.css": "/react-restaurant/static/css/main.f87ffe17.chunk.css",
     "main.js": "/react-restaurant/static/js/main.bc475cde.chunk.js",
     "main.js.map": "/react-restaurant/static/js/main.bc475cde.chunk.js.map",
     "runtime-main.js": "/react-restaurant/static/js/runtime-main.4681381b.js",
@@ -9,16 +9,17 @@
     "static/js/2.88451efc.chunk.js": "/react-restaurant/static/js/2.88451efc.chunk.js",
     "static/js/2.88451efc.chunk.js.map": "/react-restaurant/static/js/2.88451efc.chunk.js.map",
     "index.html": "/react-restaurant/index.html",
-    "precache-manifest.b7e64738fb4c034dc27bc2a6df46c0ff.js": "/react-restaurant/precache-manifest.b7e64738fb4c034dc27bc2a6df46c0ff.js",
+    "precache-manifest.5e1d5c9e352b9d94b8f190906a65a684.js": "/react-restaurant/precache-manifest.5e1d5c9e352b9d94b8f190906a65a684.js",
     "service-worker.js": "/react-restaurant/service-worker.js",
     "static/css/2.510409cd.chunk.css.map": "/react-restaurant/static/css/2.510409cd.chunk.css.map",
-    "static/css/main.c534f773.chunk.css.map": "/react-restaurant/static/css/main.c534f773.chunk.css.map",
+    "static/css/main.f87ffe17.chunk.css.map": "/react-restaurant/static/css/main.f87ffe17.chunk.css.map",
     "static/media/accent.png": "/react-restaurant/static/media/accent.78f4eac3.png",
     "static/media/appetizer.jpg": "/react-restaurant/static/media/appetizer.4809f2cc.jpg",
     "static/media/breakfast.jpg": "/react-restaurant/static/media/breakfast.86bf0d5f.jpg",
     "static/media/chop.jpg": "/react-restaurant/static/media/chop.a60faf7b.jpg",
     "static/media/dessert.jpg": "/react-restaurant/static/media/dessert.65435c12.jpg",
     "static/media/dining.jpg": "/react-restaurant/static/media/dining.ffd6cb18.jpg",
+    "static/media/Header.css": "/react-restaurant/static/media/food.d2e51360.jpg",
     "static/media/lunch.jpg": "/react-restaurant/static/media/lunch.39c572cf.jpg",
     "static/media/main-course.jpg": "/react-restaurant/static/media/main-course.6c7d6747.jpg",
     "static/media/sides.jpg": "/react-restaurant/static/media/sides.478ba344.jpg",
@@ -28,7 +29,7 @@
     "static/js/runtime-main.4681381b.js",
     "static/css/2.510409cd.chunk.css",
     "static/js/2.88451efc.chunk.js",
-    "static/css/main.c534f773.chunk.css",
+    "static/css/main.f87ffe17.chunk.css",
     "static/js/main.bc475cde.chunk.js"
   ]
 }

@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ea8c364e8584e2eb616686c7a9fe4701",
+    "revision": "0950a36dc77e94cd31cf79cc4a2953d1",
     "url": "/react-restaurant/index.html"
   },
   {
@@ -8,15 +8,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-restaurant/static/css/2.510409cd.chunk.css"
   },
   {
-    "revision": "2284b7c1e8e428628ed6",
-    "url": "/react-restaurant/static/css/main.c534f773.chunk.css"
+    "revision": "4d736dcc8650297309f9",
+    "url": "/react-restaurant/static/css/main.f87ffe17.chunk.css"
   },
   {
     "revision": "548eea8d80e2460c2b49",
     "url": "/react-restaurant/static/js/2.88451efc.chunk.js"
   },
   {
-    "revision": "2284b7c1e8e428628ed6",
+    "revision": "4d736dcc8650297309f9",
     "url": "/react-restaurant/static/js/main.bc475cde.chunk.js"
   },
   {
@@ -46,6 +46,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "ffd6cb1843c4b449bae47721927c88a8",
     "url": "/react-restaurant/static/media/dining.ffd6cb18.jpg"
+  },
+  {
+    "revision": "d2e5136093446428139599f4965faeb2",
+    "url": "/react-restaurant/static/media/food.d2e51360.jpg"
   },
   {
     "revision": "39c572cfb756ac114bd2b4140196b3d1",
