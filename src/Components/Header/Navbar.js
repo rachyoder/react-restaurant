@@ -42,11 +42,11 @@ class Navbar extends React.Component {
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul className="navbar-nav mr-auto" id="montserrat">
+                        <ul className="navbar-nav mr-auto nav-text" id="montserrat">
                             <PopulateItems items={this.state.navbarLeft} link={true} />
                         </ul>
-                        <a className="navbar-brand d-none d-md-flex mx-auto font-weight-bold" id="display" href="#">{this.props.brand}</a>
-                        <ul className="navbar-nav ml-auto" id="montserrat">
+                        <a className="navbar-brand d-none d-md-flex mx-auto font-weight-bold nav-text" id="display" href="#">{this.props.brand}</a>
+                        <ul className="navbar-nav ml-auto nav-text" id="montserrat">
                             <PopulateItems items={this.state.navbarRight} link={true}/>
                         </ul>
                     </div>
