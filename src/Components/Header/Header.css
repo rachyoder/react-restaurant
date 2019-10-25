@@ -1,7 +1,7 @@
 .masthead {
     height: 70vh;
     min-height: 500px;
-    background-image: url("/food.jpg");
+    background-image: url("./food.jpg");
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: darken;
     background-size: cover;
